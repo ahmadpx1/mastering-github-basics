@@ -8,7 +8,6 @@ Welcome! This is a quick visual guide to the most important basic Git commands, 
 
 ![Git Workflow: Workspace, Stage, Local, Remote](pics/pic01.png)
 
-This image illustrates the core stages of the Git workflow and how changes move through them, up to the **Remote Repository**.
 
 ### Stages and Key Commands Explained:
 
@@ -43,12 +42,37 @@ These steps guide you on how to **initialize** your local project and connect it
 
 ![Git Steps: Clone, Update, and Push Changes](pics/pic02.png)
 
-This section provides the workflow for **cloning** an existing project, making modifications, and keeping your local and remote branches synchronized.
 
-### Workflow Steps:
 
-#### 1️⃣ Clone the Project (First Time)
+#### 1. Clone the Project (First Time):
 
-```bash
-cd <folder>
-git clone <GitHub Link>
+1.  `cd <folder>`: Navigate to the directory where you want to save the project.
+2.  `git clone <GitHub Link>`: **Copies** the entire project from GitHub to your local machine.
+
+#### 2. Make Modifications and Synchronize:
+
+3.  `git checkout new_feature`: **Switches** to or **creates** a new branch to work on a feature.
+4.  **Your modifications**: Start editing the project files.
+5.  `git fetch origin`: **Update local repo**. Fetches new commits from the remote repository (e.g., changes made by teammates).
+    * **Note**: If the remote repo has changed and you want to integrate immediately:
+        * `git pull origin main`: **Pulls** and **merges** changes from the remote `main` branch into your current local branch.
+
+#### 3. Upload Your Changes:
+
+* `git add .`: Stage your modifications.
+* `git commit -m "##"`: Save your staged changes as a new commit.
+* `git push origin new_feature`: **Upload** your new commits to your dedicated branch on the Remote Repository.
+
+---
+
+## ⚠️ Undoing Changes (Reset & Restore)
+
+If you make a mistake or need to revert changes, here are two critical recovery commands:
+
+| Command | Description |
+| :--- | :--- |
+| `git fetch origin` then `git reset --hard origin/main` | **Hard Reset**: Deletes all uncommitted local changes, making your local branch exactly match the last state of the remote branch (`origin/main`). **Use with extreme caution!** |
+| `git restore --source=main .` | **Selective Restore**: Reverts all files in the current directory (`.`) back to the state of a specified branch (`main`). Used to discard changes in the Workspace. |
+
+---
+
