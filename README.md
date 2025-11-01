@@ -1,6 +1,6 @@
-# 🚀 Git and GitHub Commands Essentials for Beginners 💡
+# Git and GitHub Commands Essentials for Beginners 
 
-Welcome! This is a quick visual guide to the most important basic Git commands, designed to **simplify your understanding** of the Git workflow and how to interact with GitHub.
+This is a quick visual guide to the most important basic Git commands, designed to **simplify your understanding** of the Git workflow and how to interact with GitHub.
 
 ---
 
