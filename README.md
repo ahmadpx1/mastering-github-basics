@@ -7,7 +7,7 @@ This documentation summarizes the most important commands and concepts for begin
 
 ##  1. Understanding Local and Remote Repositories
 
-![Local vs Remote](images/local-vs-remote.png)
+![Local vs Remote](pics/pic01)
 
 ### 🔹 Local Repository
 A **local repository** exists only on your personal computer.  
