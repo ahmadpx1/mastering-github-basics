@@ -6,7 +6,7 @@ Welcome! This is a quick visual guide to the most important basic Git commands, 
 
 ## 1. 🔄 The Git Workflow: Local and Remote
 
-![Git Workflow: Workspace, Stage, Local, Remote](pics/pic01.jpg)
+![Git Workflow: Workspace, Stage, Local, Remote](pics/pic01.png)
 
 This image illustrates the core stages of the Git workflow and how changes move through them, up to the **Remote Repository**.
 
@@ -23,7 +23,7 @@ This image illustrates the core stages of the Git workflow and how changes move 
 
 ## 2. ⬆️ Pushing a New Project to GitHub
 
-![Git Steps: Initialize and Push First Project](pics/pic03.jpg)
+![Git Steps: Initialize and Push First Project](pics/pic03.png)
 
 These steps guide you on how to **initialize** your local project and connect it to a new repository on GitHub for the **first time**.
 
@@ -41,7 +41,7 @@ These steps guide you on how to **initialize** your local project and connect it
 
 ## 3. ⬇️ Cloning, Updating, and Modifying from GitHub
 
-![Git Steps: Clone, Update, and Push Changes](pics/pic02.jpg)
+![Git Steps: Clone, Update, and Push Changes](pics/pic02.png)
 
 This section provides the workflow for **cloning** an existing project, making modifications, and keeping your local and remote branches synchronized.
 
